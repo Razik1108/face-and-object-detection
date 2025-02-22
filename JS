@@ -1,0 +1,29 @@
+function startDetection() {
+    fetch('/start')
+        .then(response => response.text())
+        .then(data => {
+            logStatus(data);
+        })
+        .catch(err => {
+            logStatus("Error starting detection: " + err);
+        });
+}
+
+function stopDetection() {
+    fetch('/stop')
+        .then(response => response.text())
+        .then(data => {
+            logStatus(data);
+        })
+        .catch(err => {
+            logStatus("Error stopping detection: " + err);
+        });
+}
+
+function logStatus(message) {
+    const logDiv = document.getElementById("log");
+    const logEntry = document.createElement("p");
+    logEntry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+    logDiv.appendChild(logEntry);
+    logDiv.scrollTop = logDiv.scrollHeight; // Auto-scroll to the latest log
+}
