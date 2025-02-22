@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omni Recognition</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Omni Recognition</h1>
+    </header>
+
+    <main>
+        <section class="video-section">
+            <div class="video-container">
+                <h2>Live Camera Feed</h2>
+                <img id="video-feed" src="/video_feed" alt="Live Video Feed">
+            </div>
+        </section>
+
+        <section class="controls">
+            <button id="start-btn" onclick="startDetection()">Start Detection</button>
+            <button id="stop-btn" onclick="stopDetection()">Stop Detection</button>
+        </section>
+
+        <section class="status-log">
+            <h2>Status</h2>
+            <div id="log"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Omni Recognition. All rights reserved.</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
