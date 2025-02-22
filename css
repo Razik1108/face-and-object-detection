@@ -1,0 +1,83 @@
+# face-and-object-detection
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #444;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.video-section {
+    margin: 20px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.controls {
+    margin: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #005fa3;
+}
+
+.status-log {
+    margin: 20px auto;
+    max-width: 700px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.status-log #log {
+    font-family: 'Courier New', monospace;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 200px;
+    padding: 10px;
+    color: #00ff00;
+    background-color: #222;
+    border-radius: 8px;
+    border: 1px solid #555;
+}

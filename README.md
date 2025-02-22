@@ -1,1 +1,0 @@
-# face-and-object-detection
